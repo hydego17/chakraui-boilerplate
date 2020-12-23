@@ -12,4 +12,13 @@ export default defineMessages({
     id: `${scope}.header`,
     defaultMessage: 'Homepage',
   },
+  description: {
+    id: `${scope}.description`,
+    defaultMessage:
+      'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora adipisci labore, dolor recusandae, pariatur optio temporibus odio et hic rem eveniet sint similique magnam. Minus similique perferendis error ut quidem.',
+  },
+  instruction: {
+    id: `${scope}.instruction`,
+    defaultMessage: 'Find User',
+  },
 });

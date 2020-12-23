@@ -14,8 +14,6 @@ import { compose } from 'redux';
 
 import { Heading } from '@chakra-ui/react';
 
-import { Layout } from 'containers/Layout';
-
 import { useInjectSaga } from 'utils/injectSaga';
 import { useInjectReducer } from 'utils/injectReducer';
 import makeSelectAboutPage from './selectors';
@@ -28,7 +26,7 @@ export function AboutPage() {
   useInjectSaga({ key: 'aboutPage', saga });
 
   return (
-    <Layout>
+    <>
       <Helmet>
         <title>AboutPage</title>
         <meta name="description" content="Description of AboutPage" />
@@ -37,7 +35,7 @@ export function AboutPage() {
       <Heading>
         <FormattedMessage {...messages.header} />
       </Heading>
-    </Layout>
+    </>
   );
 }
 
