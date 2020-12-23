@@ -67,6 +67,7 @@ export function HomePage({
 
   return (
     <>
+      {/* Header */}
       <Box maxW="xl">
         <Heading as="h1" py={6}>
           <FormattedMessage {...messages.header} />
@@ -77,11 +78,13 @@ export function HomePage({
       </Box>
 
       <Divider my={6} />
+
       <Box maxW="xl">
         <Heading as="h2" size="lg" py={6}>
           <FormattedMessage {...messages.instruction} />
         </Heading>
 
+        {/* Input User */}
         <Box as="form" onSubmit={onSubmitForm}>
           <FormControl id="username">
             <FormLabel>Input github User</FormLabel>
